@@ -1,0 +1,18 @@
+Generate a historical fact about something that happened on {today} (in any year) in {city}, {country}. 
+Return a single JSON object in this format:
+{
+  "city": "{city}",
+  "country": Abbreviated "{country}",
+  "fact": "The historical fact here"
+}
+Make sure the response is a single JSON object, not an array.
+Requirements for the fact:
+1. Should be related to history, culture, or architecture, and suitable for a general audience
+2. Must be specific to {city}
+3. Must have happened on or around {today}
+4. Should be interesting and engaging
+5. Avoid facts that are political, religious, controversial, or potentially offensive.
+6. Should include the year it happened
+7. Keep facts under 20 words
+
+If you can't find a fact for exactly {today}, use a date within 7 days before or after.

@@ -1,0 +1,416 @@
+{
+  "user": {
+    "firstName": "Miguel",
+    "lastName": "De Cervantes",
+    "phoneNumber": "(425) 615-3871",
+    "email": "miguel@decervantes.com",
+    "password": "1234"
+  },
+  "currentPlan": {
+    "name": "Frodo Plan",
+    "monthlyPrice": 120.00,
+    "dataLimit": 10.0,
+    "talkText": "10 GB Talk & Text"
+  },
+  "billingInfo": {
+    "currentBalance": 120.00,
+    "dueDate": "2025-02-09",
+    "autoPayEnabled": true,
+    "paymentMethod": "**1026",
+    "billHistory": [
+      {
+        "date": "2025-01-16",
+        "amount": 120.00
+      },
+      {
+        "date": "2024-12-16",
+        "amount": 120.00
+      },
+      {
+        "date": "2024-11-16",
+        "amount": 120.00
+      }
+    ]
+  },
+  "dataUsage": {
+    "totalDataUsedGB": 4.39,
+    "maxUsage": 1.44,
+    "maxUsageDate": "2024-01-18",
+    "minUsage": 0.24,
+    "minUsageDate": "2024-01-20",
+    "callsDurationMinutes": 14.0,
+    "messagesSent": 27
+  },
+  "monthlyUsageHistory": [
+    {
+      "month": "2025-05-01",
+      "callsCount": 35,
+      "messagesCount": 150,
+      "inFlightServicesCount": 2,
+      "dataConsumedGB": 8.5,
+      "streamingServicesCount": 5,
+      "dataRoamingGB": 0.2,
+      "callsRoamingCount": 3,
+      "messagesRoamingCount": 15,
+      "locations": [
+        "Seattle, USA",
+        "San Francisco, USA"
+      ]
+    },
+    {
+      "month": "2025-04-01",
+      "callsCount": 42,
+      "messagesCount": 210,
+      "inFlightServicesCount": 1,
+      "dataConsumedGB": 9.2,
+      "streamingServicesCount": 7,
+      "dataRoamingGB": 0.1,
+      "callsRoamingCount": 5,
+      "messagesRoamingCount": 22,
+      "locations": [
+        "Seattle, USA",
+        "New York City, USA"
+      ]
+    },
+    {
+      "month": "2025-03-01",
+      "callsCount": 28,
+      "messagesCount": 185,
+      "inFlightServicesCount": 0,
+      "dataConsumedGB": 7.1,
+      "streamingServicesCount": 6,
+      "dataRoamingGB": 0.0,
+      "callsRoamingCount": 2,
+      "messagesRoamingCount": 10,
+      "locations": [
+        "Seattle, USA",
+        "Chicago, USA"
+      ]
+    },
+    {
+      "month": "2025-02-01",
+      "callsCount": 31,
+      "messagesCount": 160,
+      "inFlightServicesCount": 3,
+      "dataConsumedGB": 10.5,
+      "streamingServicesCount": 8,
+      "dataRoamingGB": 0.3,
+      "callsRoamingCount": 7,
+      "messagesRoamingCount": 28,
+      "locations": [
+        "Seattle, USA",
+        "Waterloo, Canada",
+        "Toronto, Canada"
+      ]
+    },
+    {
+      "month": "2025-01-01",
+      "callsCount": 39,
+      "messagesCount": 195,
+      "inFlightServicesCount": 2,
+      "dataConsumedGB": 8.9,
+      "streamingServicesCount": 6,
+      "dataRoamingGB": 0.2,
+      "callsRoamingCount": 4,
+      "messagesRoamingCount": 18,
+      "locations": [
+        "Seattle, USA",
+        "London, UK"
+      ]
+    },
+    {
+      "month": "2024-12-01",
+      "callsCount": 25,
+      "messagesCount": 140,
+      "inFlightServicesCount": 1,
+      "dataConsumedGB": 6.8,
+      "streamingServicesCount": 4,
+      "dataRoamingGB": 0.0,
+      "callsRoamingCount": 1,
+      "messagesRoamingCount": 5,
+      "locations": [
+        "Seattle, USA",
+        "Paris, France"
+      ]
+    },
+    {
+      "month": "2024-11-01",
+      "callsCount": 38,
+      "messagesCount": 200,
+      "inFlightServicesCount": 0,
+      "dataConsumedGB": 9.5,
+      "streamingServicesCount": 7,
+      "dataRoamingGB": 0.1,
+      "callsRoamingCount": 6,
+      "messagesRoamingCount": 25,
+      "locations": [
+        "Seattle, USA",
+        "Madrid, Spain",
+        "Seville, Spain"
+      ]
+    },
+    {
+      "month": "2024-10-01",
+      "callsCount": 33,
+      "messagesCount": 175,
+      "inFlightServicesCount": 2,
+      "dataConsumedGB": 7.8,
+      "streamingServicesCount": 5,
+      "dataRoamingGB": 0.2,
+      "callsRoamingCount": 3,
+      "messagesRoamingCount": 12,
+      "locations": [
+        "Seattle, USA",
+        "Prague, Czech Republic"
+      ]
+    },
+    {
+      "month": "2024-09-01",
+      "callsCount": 45,
+      "messagesCount": 220,
+      "inFlightServicesCount": 1,
+      "dataConsumedGB": 11.2,
+      "streamingServicesCount": 9,
+      "dataRoamingGB": 0.4,
+      "callsRoamingCount": 8,
+      "messagesRoamingCount": 30,
+      "locations": [
+        "Seattle, USA",
+        "Bengaluru, India",
+        "Berlin, Germany",
+        "Amsterdam, Netherlands"
+      ]
+    },
+    {
+      "month": "2024-08-01",
+      "callsCount": 29,
+      "messagesCount": 155,
+      "inFlightServicesCount": 0,
+      "dataConsumedGB": 7.5,
+      "streamingServicesCount": 4,
+      "dataRoamingGB": 0.0,
+      "callsRoamingCount": 2,
+      "messagesRoamingCount": 8,
+      "locations": [
+        "Seattle, USA",
+        "Boston, USA"
+      ]
+    },
+    {
+      "month": "2024-07-01",
+      "callsCount": 37,
+      "messagesCount": 190,
+      "inFlightServicesCount": 3,
+      "dataConsumedGB": 10.1,
+      "streamingServicesCount": 8,
+      "dataRoamingGB": 0.3,
+      "callsRoamingCount": 6,
+      "messagesRoamingCount": 24,
+      "locations": [
+        "Seattle, USA",
+        "Austin, USA",
+        "Denver, USA"
+      ]
+    },
+    {
+      "month": "2024-06-01",
+      "callsCount": 32,
+      "messagesCount": 165,
+      "inFlightServicesCount": 2,
+      "dataConsumedGB": 8.2,
+      "streamingServicesCount": 6,
+      "dataRoamingGB": 0.2,
+      "callsRoamingCount": 4,
+      "messagesRoamingCount": 16,
+      "locations": [
+        "Seattle, USA",
+        "Miami, USA"
+      ]
+    },
+    {
+      "month": "2024-05-01",
+      "callsCount": 40,
+      "messagesCount": 205,
+      "inFlightServicesCount": 1,
+      "dataConsumedGB": 9.8,
+      "streamingServicesCount": 7,
+      "dataRoamingGB": 0.1,
+      "callsRoamingCount": 5,
+      "messagesRoamingCount": 20,
+      "locations": [
+        "Seattle, USA",
+        "Philadelphia, USA"
+      ]
+    },
+    {
+      "month": "2024-04-01",
+      "callsCount": 26,
+      "messagesCount": 145,
+      "inFlightServicesCount": 0,
+      "dataConsumedGB": 7.0,
+      "streamingServicesCount": 4,
+      "dataRoamingGB": 0.0,
+      "callsRoamingCount": 1,
+      "messagesRoamingCount": 6,
+      "locations": [
+        "Seattle, USA",
+        "Phoenix, USA"
+      ]
+    },
+    {
+      "month": "2024-03-01",
+      "callsCount": 34,
+      "messagesCount": 180,
+      "inFlightServicesCount": 3,
+      "dataConsumedGB": 10.8,
+      "streamingServicesCount": 8,
+      "dataRoamingGB": 0.3,
+      "callsRoamingCount": 7,
+      "messagesRoamingCount": 26,
+      "locations": [
+        "Seattle, USA",
+        "San Diego, USA",
+        "Los Angeles, USA"
+      ]
+    },
+    {
+      "month": "2024-02-01",
+      "callsCount": 30,
+      "messagesCount": 158,
+      "inFlightServicesCount": 2,
+      "dataConsumedGB": 8.0,
+      "streamingServicesCount": 5,
+      "dataRoamingGB": 0.2,
+      "callsRoamingCount": 3,
+      "messagesRoamingCount": 14,
+      "locations": [
+        "Seattle, USA",
+        "Dallas, USA"
+      ]
+    },
+    {
+      "month": "2024-01-01",
+      "callsCount": 36,
+      "messagesCount": 192,
+      "inFlightServicesCount": 1,
+      "dataConsumedGB": 9.0,
+      "streamingServicesCount": 6,
+      "dataRoamingGB": 0.1,
+      "callsRoamingCount": 4,
+      "messagesRoamingCount": 19,
+      "locations": [
+        "Seattle, USA",
+        "Houston, USA"
+      ]
+    },
+    {
+      "month": "2023-12-01",
+      "callsCount": 27,
+      "messagesCount": 142,
+      "inFlightServicesCount": 0,
+      "dataConsumedGB": 6.9,
+      "streamingServicesCount": 4,
+      "dataRoamingGB": 0.0,
+      "callsRoamingCount": 1,
+      "messagesRoamingCount": 7,
+      "locations": [
+        "Seattle, USA",
+        "Atlanta, USA"
+      ]
+    },
+    {
+      "month": "2023-11-01",
+      "callsCount": 39,
+      "messagesCount": 202,
+      "inFlightServicesCount": 3,
+      "dataConsumedGB": 10.2,
+      "streamingServicesCount": 8,
+      "dataRoamingGB": 0.3,
+      "callsRoamingCount": 7,
+      "messagesRoamingCount": 27,
+      "locations": [
+        "Seattle, USA",
+        "Orlando, USA",
+        "Tampa, USA"
+      ]
+    },
+    {
+      "month": "2023-10-01",
+      "callsCount": 32,
+      "messagesCount": 170,
+      "inFlightServicesCount": 2,
+      "dataConsumedGB": 8.3,
+      "streamingServicesCount": 5,
+      "dataRoamingGB": 0.2,
+      "callsRoamingCount": 4,
+      "messagesRoamingCount": 13,
+      "locations": [
+        "Seattle, USA",
+        "Las Vegas, USA"
+      ]
+    },
+    {
+      "month": "2023-09-01",
+      "callsCount": 43,
+      "messagesCount": 212,
+      "inFlightServicesCount": 1,
+      "dataConsumedGB": 11.5,
+      "streamingServicesCount": 9,
+      "dataRoamingGB": 0.4,
+      "callsRoamingCount": 8,
+      "messagesRoamingCount": 31,
+      "locations": [
+        "Seattle, USA",
+        "Portland, USA",
+        "Sacramento, USA",
+        "Oakland, USA"
+      ]
+    },
+    {
+      "month": "2023-08-01",
+      "callsCount": 28,
+      "messagesCount": 152,
+      "inFlightServicesCount": 0,
+      "dataConsumedGB": 7.2,
+      "streamingServicesCount": 4,
+      "dataRoamingGB": 0.0,
+      "callsRoamingCount": 2,
+      "messagesRoamingCount": 9,
+      "locations": [
+        "Seattle, USA",
+        "Salt Lake City, USA"
+      ]
+    },
+    {
+      "month": "2023-07-01",
+      "callsCount": 35,
+      "messagesCount": 188,
+      "inFlightServicesCount": 3,
+      "dataConsumedGB": 10.3,
+      "streamingServicesCount": 8,
+      "dataRoamingGB": 0.3,
+      "callsRoamingCount": 6,
+      "messagesRoamingCount": 23,
+      "locations": [
+        "Seattle, USA",
+        "Albuquerque, USA",
+        "Santa Fe, USA"
+      ]
+    },
+    {
+      "month": "2023-06-01",
+      "callsCount": 31,
+      "messagesCount": 162,
+      "inFlightServicesCount": 2,
+      "dataConsumedGB": 8.1,
+      "streamingServicesCount": 5,
+      "dataRoamingGB": 0.2,
+      "callsRoamingCount": 3,
+      "messagesRoamingCount": 15,
+      "locations": [
+        "Seattle, USA",
+        "Boise, USA"
+      ]
+    }
+  ]
+}
