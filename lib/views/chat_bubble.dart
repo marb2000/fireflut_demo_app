@@ -2,8 +2,8 @@ import 'dart:io';
 import 'package:fireflut_demo_app/common_dependencies.dart';
 import 'package:fireflut_demo_app/models/chat_message.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:intl/intl.dart';
+import 'package:markdown_widget/markdown_widget.dart';
 
 class ChatBubble extends StatelessWidget {
   final ChatMessage message;
@@ -29,17 +29,14 @@ class ChatBubble extends StatelessWidget {
               borderRadius: BorderRadius.circular(8.0),
               child: kIsWeb
                   ? (message.imageBytes != null
-                      ? Image.memory(
-                          message.imageBytes!,
-                          fit: BoxFit.contain,
-                        )
-                      : const SizedBox.shrink())
+                        ? Image.memory(message.imageBytes!, fit: BoxFit.contain)
+                        : const SizedBox.shrink())
                   : (message.imagePath != null
-                      ? Image.file(
-                          File(message.imagePath!),
-                          fit: BoxFit.contain,
-                        )
-                      : const SizedBox.shrink()),
+                        ? Image.file(
+                            File(message.imagePath!),
+                            fit: BoxFit.contain,
+                          )
+                        : const SizedBox.shrink()),
             ),
           );
         },
@@ -60,24 +57,28 @@ class ChatBubble extends StatelessWidget {
           minWidth: 100.0,
         ),
         child: Column(
-          crossAxisAlignment:
-              message.isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+          crossAxisAlignment: message.isMe
+              ? CrossAxisAlignment.end
+              : CrossAxisAlignment.start,
           children: [
             Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 12.0,
+              ),
               decoration: message.isMe
                   ? BoxDecoration(
                       color: $styles.colors.primary.withValues(alpha: 0.25),
                       border: GradientBoxBorder(
                         gradient: LinearGradient(
-                            colors: [
-                              $styles.colors.primary.withValues(alpha: 0.8),
-                              $styles.colors.background,
-                            ],
-                            begin: Alignment
-                                .topLeft, // Start point of the gradient
-                            end: Alignment.bottomRight),
+                          colors: [
+                            $styles.colors.primary.withValues(alpha: 0.8),
+                            $styles.colors.background,
+                          ],
+                          begin:
+                              Alignment.topLeft, // Start point of the gradient
+                          end: Alignment.bottomRight,
+                        ),
                         width: 1,
                       ),
                       borderRadius: BorderRadius.only(
@@ -87,28 +88,32 @@ class ChatBubble extends StatelessWidget {
                         bottomRight: Radius.circular(24.0),
                       ),
                     )
-                  : BoxDecoration(// AI message styles
-
-                      ),
+                  : BoxDecoration(
+                      // AI message styles
+                    ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   if (message.imagePath != null || message.imageBytes != null)
                     _buildImage(),
                   if (message.message.isNotEmpty)
-                    MarkdownBody(
+                    MarkdownWidget(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
                       data: message.message,
-                      styleSheet:
-                          MarkdownStyleSheet.fromTheme(Theme.of(context))
-                              .copyWith(
-                        p: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                              color: message.isMe
-                                  ? Colors.white
-                                  : Theme.of(context)
-                                      .textTheme
-                                      .bodyMedium
-                                      ?.color,
-                            ),
+                      config: MarkdownConfig(
+                        configs: [
+                          PConfig(
+                            textStyle: Theme.of(context).textTheme.bodyMedium!
+                                .copyWith(
+                                  color: message.isMe
+                                      ? Colors.white
+                                      : Theme.of(
+                                          context,
+                                        ).textTheme.bodyMedium?.color,
+                                ),
+                          ),
+                        ],
                       ),
                     ),
                 ],
@@ -128,8 +133,11 @@ class ChatBubble extends StatelessWidget {
             ),
             if (message.imageName != null)
               Padding(
-                padding:
-                    const EdgeInsets.only(top: 4.0, left: 16.0, right: 16.0),
+                padding: const EdgeInsets.only(
+                  top: 4.0,
+                  left: 16.0,
+                  right: 16.0,
+                ),
                 child: Text(
                   message.imageName!,
                   style: TextStyle(
