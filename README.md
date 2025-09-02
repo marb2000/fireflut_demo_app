@@ -1,6 +1,6 @@
 # 🔥 Fireflutt Mobile Demo
 
-A demo Flutter application showcasing the integration of Vertex AI in Firebase (Gemini) with a mobile service provider app concept. This sample app demonstrates how to build modern mobile applications using Flutter, Firebase, and AI capabilities via Gemini 2.0.
+A demo Flutter application showcasing the integration of Firebase AI Logic with a mobile service provider app concept. This sample app demonstrates how to build modern mobile applications using Flutter, Firebase, and AI capabilities via Gemini 2.5.
 
 ![Fireflut Mobile Banner](assets/provider-logo.png)
 
@@ -32,15 +32,13 @@ This demo app serves as a reference implementation to demonstrate:
 - Billing enabled on Firebase project (required for Vertex AI)
 - VS Code with Flutter plugins
 
-### Firebase and Vertex AI Setup
+### Firebase and Firebase AI Logic Setup
 
 1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
 
-2. Enable Vertex AI in the Firebase Console:
-   - Go to Build with Gemini and select Vertex AI in Firebase 
+2. Enable Firebase AI Logic:
    - Follow the setup wizard
    - Enable required APIs
-
    
 
 ### Installation
@@ -83,7 +81,7 @@ lib/
 
 - **Frontend**: Flutter
 - **Backend Serverless Services**: Firebase
-- **AI Integration**: Vertex AI i Firebase (Gemini)
+- **AI Integration**: Firebase AI Logic (Gemini)
 - **Voice Processing**: Record Plugin and Gemini 2.0
 - **Mock Data**: Local JSON assets
 
